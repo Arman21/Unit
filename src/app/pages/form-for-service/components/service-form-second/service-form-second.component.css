@@ -1,0 +1,21 @@
+.main-block {
+  margin-left:32%;
+}
+
+.card-second {
+  border:4px solid rgb(38,238,211) !important
+}
+
+.card-container {
+  display:flex;
+  width:100%;
+  height:120px;
+  position:relative;
+}
+
+.btn-reset {
+  margin-left:5%;
+  position:absolute;
+  top:-14px;
+  left:46%;
+}

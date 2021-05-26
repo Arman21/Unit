@@ -1,0 +1,18 @@
+<form class="wrapper-elem main-block">
+  <div class="card card-second" style="width:18rem;">
+    <input type="text" class="form-control" name="data-pass" [(ngModel)]="makeCounter.value">
+    <div class="card-body">
+      <h5 class="card-title">Enter a value and submit it.</h5>
+      <button type="button" class="btn btn-info" title="+" (click)="makeCounter.addValue()">Add value +</button>
+      <button type="button" class="btn btn-sub btn-success" title="-" (click)="makeCounter.subValue()">Sub. value -</button>
+    </div>
+    <div class="card-body card-container">
+      <button type="button" class="btn btn-send btn-primary" title="click here"
+      (click)="makeCounter.passMultiplier(makeCounter.value)">SEND DATA</button>
+      <button type="button" class="btn btn-reset btn-danger" title="click here"
+      (click)="makeCounter.resetAllValues(makeCounter.value)">RESET ALL</button>
+    </div>
+  </div>
+</form>
+
+

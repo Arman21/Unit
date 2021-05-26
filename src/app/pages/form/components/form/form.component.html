@@ -1,0 +1,16 @@
+<form class="wrapper-elem">
+  <div class="card" style="width:18rem;">
+    <input type="text" class="form-control" name="data-pass" [(ngModel)]="value">
+    <div class="card-body">
+      <h5 class="card-title">Enter a value and submit it.</h5>
+      <button type="button" class="btn btn-success" title="+" (click)="addValue()">Add value +</button>
+      <button type="button" class="btn btn-sub btn-info" title="-" (click)="subValue()">Sub. value -</button>
+    </div>
+    <div class="card-body">
+      <button type="button" class="btn btn-send btn-primary" title="click here"
+      (click)="passMultiplier(value)">SEND DATA</button>
+    </div>
+  </div>
+</form>
+
+<app-form-second [parentValue]="value" (childValue)="getData($event)"></app-form-second>
